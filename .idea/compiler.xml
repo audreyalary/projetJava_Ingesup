@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SpringBootRestApi" />
         <module name="SpringBootRestApiExample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpringBootRestApi" target="1.8" />
       <module name="SpringBootRestApiExample" target="1.8" />
     </bytecodeTargetLevel>
   </component>
