@@ -120,4 +120,12 @@ public class RestApiController {
 		return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
 	}
 
+
+	@RequestMapping(value = "/test/", method = RequestMethod.GET)
+
+	public String greeting() {
+
+		return "";
+	}
+
 }

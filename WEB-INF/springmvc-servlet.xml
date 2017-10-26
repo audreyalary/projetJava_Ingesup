@@ -1,0 +1,1 @@
+<bean name="/list_cars.html" class="springmvc.web.CarListController"/>

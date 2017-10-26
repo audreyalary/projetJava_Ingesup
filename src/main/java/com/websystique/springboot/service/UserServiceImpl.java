@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.websystique.springboot.model.UserRepository;
 import org.springframework.stereotype.Service;
 
 import com.websystique.springboot.model.User;
@@ -46,7 +47,7 @@ public class UserServiceImpl implements UserService{
 	
 	public void saveUser(User user) {
 		user.setId(counter.incrementAndGet());
-		users.add(user);
+        //UserRepository.add(user);
 	}
 
 	public void updateUser(User user) {
