@@ -5,6 +5,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="'Hello, ' + ${name} + '!'" />
+<p th:text="'Hello, ' + ${lists} + '!'" />
+
+<c:if test="${not empty lists}">
+
+    <ul>
+        <c:forEach var="listValue" items="${lists}">
+            <li>${listValue}</li>
+        </c:forEach>
+    </ul>
+
+</c:if>
+
 </body>
 </html>
